@@ -72,11 +72,21 @@ header h1, header p {
 }
 h2 {
   color: #c084a0;
-  border-bottom: 2px solid #c084a0;
-  padding-bottom: 8px;
-  margin: 40px 20px 20px; /* 20px left/right so line doesn’t touch edge */
   text-align: center;
-    }
+  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px; /* line length - make it 80px for longer */
+  height: 3px;
+  background: #c084a0;
+  margin: 10px auto 0; /* centers the line */
+  border-radius: 2px;
+  }
       
     }
     .skills, .projects {
