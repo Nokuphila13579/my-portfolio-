@@ -73,20 +73,23 @@ header h1, header p {
 h2 {
   color: #c084a0;
   text-align: center;
-  margin: 40px 0 20px;
-  padding-bottom: 10px;
+  font-size: 1.8rem;
+  margin: 40px 0 25px;
+  padding-bottom: 18px;
   position: relative;
 }
 
 h2::after {
   content: '';
-  display: block;
-  width: 60px; /* line length - make it 80px for longer */
+  width: 70px; /* make 90px if you want longer */
   height: 3px;
   background: #c084a0;
-  margin: 10px auto 0; /* centers the line */
-  border-radius: 2px;
-  }
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* this centers it perfectly */
+      }
       
     }
     .skills, .projects {
